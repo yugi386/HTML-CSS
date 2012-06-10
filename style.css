@@ -143,9 +143,9 @@ p {
 	color: #556B2F;
 	font-family: arial;
 	font-size: 17px;
-	display: block;
+	display: inline;
 	text-transform: none;
-	margin-left: 15px;
+	/*margin-left: 15px;*/
 	font-weight: bold;
 }
 
