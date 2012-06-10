@@ -140,10 +140,13 @@ p {
 
 #coluna2  .lista{
 	text-decoration:none;
-	color: #B22222;
-	font-family: Verdana;
-	display: inline;
+	color: #556B2F;
+	font-family: arial;
+	font-size: 17px;
+	display: block;
 	text-transform: none;
+	margin-left: 15px;
+	font-weight: bold;
 }
 
 #coluna2  iframe{
@@ -197,4 +200,23 @@ p {
 	text-decoration: none;
 	color:#8B0000;
 	
+}
+
+.comando {
+	display: block;
+	margin: 30px auto;
+	padding: 10px;
+	background: #B0C4DE;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	border: 3px solid #CD853F;
+	color: #2F4F4F;
+}
+
+em {
+	color: #B22222;
+	font-weight: bold;
+	font-family: verdana;
+	font-size: 16px;
 }
