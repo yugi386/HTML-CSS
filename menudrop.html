@@ -4,15 +4,16 @@
 		<meta name="keywords" content="" />
 		<meta name="description" content="" />
 		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-		<title>Material de Apoio - Treinamento Zigotto</title>
+		<title>Menu Drop Down - Treinamento Zigotto</title>
 		<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
 	</head>
 	<body>
 		<div id="header">
 		</div>
 	
 		<div id="titulo">
-			MATERIAL DE APOIO - HTML, CSS E JAVASCRIPT
+			MENU DROP DOWN - Treinamento Zigotto
 		</div>
 		
 		<div id="conteudo"> <!-- INICIO DO CONTEUDO -->
@@ -20,50 +21,80 @@
 			<div id="coluna1">
 				<a href="index.html">HTML - CSS</a>	
 				<a href="ruby.html">RUBY</a>	
-				<a href="videos.html">VÍDEO-AULAS</a>	
-				<a href="github.html">TUTORIAL GITHUB</a>	
-				<a href="menudrop.html">MENU DROP DOWN</a>									
+				<a href="videos.html">VÍDEO-AULAS</a>
+				<a href="github.html">TUTORIAL GITHUB</a>					
+				<a href="menudrop.html">MENU DROP DOWN</a>					
 			</div>	
 			
 			<div id="coluna2">
-				<h2>VÍDEO AULAS - HTML</h2>
-				<p>
-					Introdução a Hyper Text Markup Language, Estrutura Básica, Cabeçalhos e Parágrafos, Elementos Inline, Cores, Imagens, Elementos em Bloco,
-					Listas ul, ol, li, Links, Links relativos, Links internos, Links para Email, Call e Chat, Imagens Mapeadas, DIV e SPAN, Tabelas, Formulários,
-					Caracteres Especiais e Encoding, W3C, Versões, HTML5, Doctypes e Validadores, HTML Strict e Certificação;
-				</p>
-				
-				<a href="http://www.youtube.com/playlist?list=PL58E7AE1ABE557AE4&feature=plcp" target="_blank">fonte: UNIVERSIDADE XTI - Leia mais</a>	
-				
-				<!-- incorporacao de videos YOUTUBE -->
-				<iframe src="http://www.youtube.com/embed/lzkW0jWrluI" ></iframe>
-				
-				<h2>VÍDEO AULAS - CSS</h2>
-				<p>
-					Cascading Style Sheet: Introdução a Cascading Style Sheets, Sintaxe, Uso do CSS Inline, Incorporado e Externo, Seletores Simples,
-					Compostos e Pseudo Seletores, Efeito Cascata e Herança das CSS, BoxModel, Medidas absolutas e relativas, Formatação de Textos
-					(fontes, espaçamentos e alinhamentos), Background, Estilização de Cabeçalhos, Links e Listas, Menu DropDown, Posicionamento Float,
-					Absoluto e Z-Index, Layout de uma, duas e três tabelas, Tableless;
-				</p>
-				
-				<a href="http://www.youtube.com/playlist?list=PL818DE9B26FECFB02&feature=plcp" target="_blank">fonte: UNIVERSIDADE XTI - Leia mais</a>
-				
-				<!-- incorporacao de videos YOUTUBE -->
-				<iframe src="http://www.youtube.com/embed/F6FjHen50lA" ></iframe>
-				
+				<h2>MENU VERTICAL SOMENTE COM CSS</h2>
 
-				<h2>VÍDEO AULAS - JAVASCRIPT</h2>
-				<p>
-					Ementa do Curso de JavaScript: Introdução ao JavaScript, Variáveis, Constantes, Padrão Web, Camadas HTML,CSS,JavaScript, Operadores Matemáticos,
-					de Comparação, Lógicos, de Atribuição, Estruturas Condicionais if e switch, Estruturas de Repetição for, for/in e do/while, Tratamento de Exceções,
-					Objetos Boolean, Number, String, Array, Date, Math e Expressões Regulares ( Regular Expression ), Funções, Eventos, BOM, Temporizadores, Cookies,
-					HTML5 Storage, DOM, DOM HTML API, DOM CORE API, AJAX.
-				</p>
+				<div id="menu_vertical">
+					<ul id="menu">
+						<li>Home</li>				
+						<li>Soluções</li>
+						<li>Indústrias >>
+							<ul >
+								<li>Financeira</li>				
+								<li>Comunicação</li>
+								<li>Educação</li>
+								<li>Energia >> 
+									<ul >
+										<li>Solar</li>				
+										<li>Eólica</li>
+										<li>Elétrica</li>
+									</ul>
+								</li>
+								<li>Governo</li>
+							</ul>
+						</li>
+						<li>Portifólio</li>
+						<li>Contato</li>
+					</ul>
+				</div>
 				
-				<a href="http://www.youtube.com/playlist?list=PL48981947BAC7C172&feature=plcp" target="_blank">fonte: UNIVERSIDADE XTI - Leia mais</a>
-				
-				<!-- incorporacao de videos YOUTUBE -->
-				<iframe src="http://www.youtube.com/embed/64glGcmkHNI" ></iframe>
+				<h2>CÓDIGO CSS</h2>
+				<TEXTAREA readonly="true">
+#menu_vertical {
+	margin-left: 20px;
+	font-family: Arial;
+}
+
+#menu_vertical ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu_vertical li {
+	background-color:#F4A460;
+	color: white;
+	font-weight: bold;
+	border: 1px solid black;
+	width: 100px;
+	padding: 5px;
+	position: relative;
+}
+
+#menu_vertical li:hover{
+	background-color: black;
+	color: white;
+}
+
+/* submenu */
+#menu_vertical li > ul{
+	position: absolute;
+	left: 110px;
+	top: -1px;
+	color: black;
+	display: none;
+}
+
+/*mostra o submenu*/
+#menu_vertical li:hover > ul {
+	display: block;
+}
+				</TEXTAREA>
 				
 			</div>	
 			

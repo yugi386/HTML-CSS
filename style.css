@@ -220,3 +220,46 @@ em {
 	font-family: verdana;
 	font-size: 16px;
 }
+
+textarea {
+	width: 500px;
+	height: 400px;
+	margin: 10px auto;
+	display: block;
+}
+
+#menu_vertical {
+	margin-left: 20px;
+	font-family: Arial;
+}
+#menu_vertical ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#menu_vertical li {
+	background-color:#F4A460;
+	color: white;
+	font-weight: bold;
+	border: 1px solid black;
+	width: 100px;
+	padding: 5px;
+	position: relative;
+}
+#menu_vertical li:hover{
+	background-color: black;
+	color: white;
+}
+/* submenu */
+#menu_vertical li > ul{
+	position: absolute;
+	left: 110px;
+	top: -1px;
+	color: black;
+	display: none;
+}
+/*mostra o submenu*/
+#menu_vertical li:hover > ul {
+	display: block;
+}
+
