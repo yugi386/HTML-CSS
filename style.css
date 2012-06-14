@@ -35,7 +35,6 @@ p {
 }
 
 #header {
-	/*overflow: hidden;*/
 	width: 800px;
 	height: 30px;
 	margin: 0 auto;
@@ -43,8 +42,7 @@ p {
 	margin-top: 10px;
 }
 
-#titulo {
-	overflow: hidden;
+#title {
 	width: 900px;
 	height: auto;
 	margin: 0 auto;
@@ -57,7 +55,7 @@ p {
 	font-size: 36px;	
 }
 
-#conteudo {
+#content {
 	overflow: hidden;
 	width: 800px;
 	min-height:500px;
@@ -68,7 +66,7 @@ p {
 	text-align: justify;
 }
 
-#coluna1 {
+#column1 {
 	overflow: hidden;
 	width: 200px;
 	min-height:500px;
@@ -83,7 +81,7 @@ p {
 	font-size: 14px;
 }
 
-#coluna1  a{
+#column1  a{
 	display: block;
 	background: #B0C4DE;
 	color: #FFFFFF;
@@ -95,12 +93,12 @@ p {
 	margin: 10px 0;
 }
 
-#coluna1 a:hover {
+#column1 a:hover {
 	background: #708090;
 	border-left: 20px solid #6495ED;	
 }
 
-#coluna2 {
+#column2 {
 	overflow: hidden;
 	width: 560px;
   	height: 100%;
@@ -113,21 +111,21 @@ p {
 	font-family: Verdana;
 }
 
-#coluna2 .img{
+#column2 .img{
 	width: 200px;
 	height: 133px;
 	margin: 0px 0px 10px 10px;
 	float: right;
 }
 
-#coluna2 .img2{
+#column2 .img2{
 	width: 200px;
 	height: 133px;
 	margin: 0px 10px 10px 0px;
 	float: left;
 }
 
-#coluna2 a{
+#column2 a{
 	display: block;
 	color: #FF3030;
 	text-align: right;
@@ -138,7 +136,7 @@ p {
 	margin-bottom:20px;
 }
 
-#coluna2  .lista{
+#column2  .lista{
 	text-decoration:none;
 	color: #556B2F;
 	font-family: arial;
@@ -149,14 +147,14 @@ p {
 	font-weight: bold;
 }
 
-#coluna2  iframe{
+#column2  iframe{
 	width: 560px; 
 	height: 400px;
 	border: none;
 	margin: 10px auto;
 }
 
-#rodape {
+#footer {
 	width: 780px;
 	min-height:40px;
   	height:auto !important;
@@ -169,21 +167,21 @@ p {
 	padding: 10px;
 }
 
-#rodape ul  a{
+#footer ul  a{
 	color: #CD661D;
 	text-decoration: none;
 	font-family: Georgia;
 	font-size: 16px;
 }
 
-#rodape img{
+#footer img{
 	width: 300px;
 	height: 200px;
 	margin: 75px 10px 10px 0px;
 	float: right;
 }
 
-#msg{
+#credits{
 	width: 800px;
 	height:20px;
 	margin: 0px auto;
@@ -196,13 +194,13 @@ p {
 	margin-bottom: 10px;
 }
 
-#msg a{
+#credits a{
 	text-decoration: none;
 	color:#8B0000;
 	
 }
 
-.comando {
+.code {
 	display: block;
 	margin: 30px auto;
 	padding: 10px;
